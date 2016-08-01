@@ -1,0 +1,14 @@
+{
+    "autoload": {
+        "psr-4": {
+            "MyLib\\": "app/libs/myLib/src/"
+        }
+    },
+    "require-dev": {
+        "vlucas/phpdotenv": "*",
+        "phpdocumentor/phpdocumentor": "2.*"
+    },
+       "require": {
+       "aws/aws-sdk-php": "~3.0"
+   }
+}
