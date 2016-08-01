@@ -1,0 +1,27 @@
+{
+  "name": "demo-project",
+  "version": "1.0.0",
+  "description": "Just a demo project",
+  "main": "HelloWorld.java",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/salvianoo/DemoProject.git"
+  },
+  "keywords": [
+    "jenkins"
+  ],
+  "author": "Salviano Ludgerio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/salvianoo/DemoProject/issues"
+  },
+  "homepage": "https://github.com/salvianoo/DemoProject#readme",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-contrib-compress": "^1.2.0",
+    "grunt-sass": "^1.2.0"
+  }
+}
