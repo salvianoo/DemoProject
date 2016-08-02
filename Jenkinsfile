@@ -9,13 +9,13 @@ node {
         sh 'npm install'
 
     stage 'Build'
-        branch_name = '${BRANCH_NAME}'
+        branch_name = env.BRANCH_NAME
 
         if (branch_name == 'master') {
             sh 'grunt --no-color'
             sh 'php app/server/index.php'
             sh 'grunt zip'
         } else {
-            echo "Nao faz deploy do branch: ${branch_name}"
+            echo "Nao faz deploy da branch: ${branch_name}"
         }
 }
