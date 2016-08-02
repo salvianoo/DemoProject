@@ -20,6 +20,6 @@ node {
         }
 }
 
-def get_branch_name {
+def get_branch_name() {
     sh '${BRANCH_NAME}'
 }
