@@ -13,6 +13,5 @@ node {
         sh 'grunt --no-color'
         sh 'php app/server/index.php'
         sh 'grunt zip'
-
-        echo "branch: ${BRANCH_NAME}"
+        sh "echo ${BRANCH_NAME}"
 }
