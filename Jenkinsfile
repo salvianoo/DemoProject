@@ -12,6 +12,7 @@ node {
         sh 'npm install'
 
         sh 'whoami'
+        sh 'pwd'
 
     stage 'Build'
         branch_name = env.BRANCH_NAME
