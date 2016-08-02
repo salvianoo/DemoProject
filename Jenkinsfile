@@ -9,7 +9,8 @@ node {
         sh 'npm install'
 
     stage 'Build'
-        branch_name = sh '${BRANCH_NAME}'
+        def env = System.getenv()
+        String branch_name = env['BRANCH_NAME']
 
         if (branch_name == 'master') {
             sh 'grunt --no-color'
