@@ -8,3 +8,4 @@ Just a demo project
 # Teste com as credenciais hard-coded
 
 # Teste com boto3
+# Teste com credenciais do usuario CodeCommitJenkins
