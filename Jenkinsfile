@@ -25,7 +25,7 @@ node {
         if (branch_name == 'master') {
 
             // Upload para S3
-            sh 'aws s3 cp build-demo.zip s3://deploy-demo/ --region sa-east-1'
+            // sh 'aws s3 cp build-demo.zip s3://deploy-demo/ --region sa-east-1'
 
             // upload do .zip para s3
             // update url do s3 project_name-master-timestamp.zip na app OpsWorks
