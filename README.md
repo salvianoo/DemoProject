@@ -7,3 +7,4 @@ Just a demo project
 # Teste final
 # Teste com as credenciais hard-coded
 
+# Teste com boto3
