@@ -11,7 +11,7 @@ node {
     stage 'Build'
         cmd = "${sh 'echo ${BRANCH_NAME}'}"
         //branch_name = cmd.split(' ')
-        echo cmd
+        echo "cmd returned: ${cmd}"
 
         if (branch_name == 'master') {
             sh 'grunt --no-color'
