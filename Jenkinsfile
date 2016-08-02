@@ -11,6 +11,8 @@ node {
         sh 'composer install --no-dev'
         sh 'npm install'
 
+        sh 'whoami'
+
     stage 'Build'
         branch_name = env.BRANCH_NAME
 
