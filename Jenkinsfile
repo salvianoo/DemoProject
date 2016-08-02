@@ -9,7 +9,7 @@ node {
         sh 'npm install'
 
     stage 'Build'
-        branch_name = "${sh '${BRANCH_NAME}'}"
+        def (_, branch_name) = "${sh 'echo ${BRANCH_NAME}'}".split(' ')
 
         if (branch_name == 'master') {
             sh 'grunt --no-color'
