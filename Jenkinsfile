@@ -9,7 +9,7 @@ node {
         sh 'npm install'
 
     stage 'Build'
-        branch_name = get_branch_name
+        branch_name = get_branch_name()
 
         if (branch_name == 'master') {
             sh 'grunt --no-color'
@@ -18,8 +18,9 @@ node {
         } else {
             echo "Nao faz deploy do branch: ${branch_name}"
         }
+
+    def get_branch_name() {
+        sh '${BRANCH_NAME}'
+    }
 }
 
-def get_branch_name() {
-    sh '${BRANCH_NAME}'
-}
